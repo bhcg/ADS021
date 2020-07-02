@@ -41,17 +41,17 @@ public class VisitanteMB implements Serializable {
 
     public String criar() {
         this.visitante = new Visitante();
-        return "/pages/visitante/criar";
+        return "/pages/visitantes/criar";
     }
 
     public String editar(Visitante visitante) {
         this.visitante = visitante;
-        return "/pages/visitante/criar";
+        return "/pages/visitantes/criar";
     }
 
     public String remover(Visitante visitante) {
         dao.remove(visitante);
-        return "/pages/visitante/listar?faces-redirect=true";
+        return "/pages/visitantes/listar?faces-redirect=true";
     }
 
     public String salvar(Visitante visitante) {
@@ -60,7 +60,7 @@ public class VisitanteMB implements Serializable {
         } else {
             dao.edit(visitante);
         }
-        return "/pages/visitante/listar?faces-redirect=true";
+        return "/pages/visitantes/listar?faces-redirect=true";
     }
 
 }
