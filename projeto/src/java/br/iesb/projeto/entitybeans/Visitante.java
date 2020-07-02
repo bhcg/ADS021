@@ -18,13 +18,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "visitantes")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Visitante.findAll", query = "SELECT v FROM Visitantes v")
-    , @NamedQuery(name = "Visitante.findById", query = "SELECT v FROM Visitantes v WHERE v.id = :id")
-    , @NamedQuery(name = "Visitante.findByCondominio", query = "SELECT v FROM Visitantes v WHERE v.condominio = :condominio")
-    , @NamedQuery(name = "Visitante.findByUnidade", query = "SELECT v FROM Visitantes v WHERE v.unidade = :unidade")
-    , @NamedQuery(name = "Visitante.findByVisitante", query = "SELECT v FROM Visitantes v WHERE v.visitante = :visitante")
-    , @NamedQuery(name = "Visitante.findByRg", query = "SELECT v FROM Visitantes v WHERE v.rg = :rg")
-    , @NamedQuery(name = "Visitante.findByDataDeEntrada", query = "SELECT v FROM Visitantes v WHERE v.DataDeEntrada = :DataDeEntrada")})
+    @NamedQuery(name = "Visitante.findAll", query = "SELECT v FROM Visitante v")
+    , @NamedQuery(name = "Visitante.findById", query = "SELECT v FROM Visitante v WHERE v.id = :id")
+    , @NamedQuery(name = "Visitante.findByCondominio", query = "SELECT v FROM Visitante v WHERE v.condominio = :condominio")
+    , @NamedQuery(name = "Visitante.findByUnidade", query = "SELECT v FROM Visitante v WHERE v.unidade = :unidade")
+    , @NamedQuery(name = "Visitante.findByVisitante", query = "SELECT v FROM Visitante v WHERE v.visitante = :visitante")
+    , @NamedQuery(name = "Visitante.findByRg", query = "SELECT v FROM Visitante v WHERE v.rg = :rg")
+    , @NamedQuery(name = "Visitante.findByDataDeEntrada", query = "SELECT v FROM Visitante v WHERE v.DataDeEntrada = :DataDeEntrada")})
 public class Visitante implements Serializable {
 
     private static final long serialVersionUID = 1L;
